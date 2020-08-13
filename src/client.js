@@ -175,7 +175,6 @@ so.state = function(name, config){
 }
 
 so.stop = function (options, callback) {
-  console.error('current component:', this.current.component, 'this component', this.component);
     var component = this.current && this.current.component;
     if (component) {
       _.proxyMethod(component.$root, 'destroy', options);
